@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+
+    <header>
+        <img class="Logo" src="Img/Logo.png" alt="">
+    </header>
+    
+    <main class="contenedor">
+        <section class="seccion-texto">
+            <textarea class="text-area"  cols="30" rows="20" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="alerta">
+                <img class="warning" src="Img/exclamation.svg" alt="">
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion-mensaje">
+            <textarea class="mensaje" cols="30" rows="20"></textarea>
+            <!-- <div>
+                <h6 class="parrafo">Ningun mensaje fue encontrado</h6>
+            </div> -->
+            <div class="botones2">
+                <button class="btn_copiar" onclick="textoCopiado()">Copiar</button>
+                <button class="btn_pegar" onclick="btnPegar()" >Pegar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Desarrollador por Alejandro Anchundia.</p>
+        <div class="redes">
+            <a href="https://github.com/EdgarCarrion" target="_blank"><img class="github" src="Img/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/edgar-carrion/" target="_blank"><img class="linkedin" src="Img/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.instagram.com/edgar_carrion/" target="_blank"><img class="instagram" src="Img/instagram.png" alt="instagram"></a>
+            
+        </div>
+    </footer>
+
+
+    <script src="logica.js"></script>
+</body>
+</html>
