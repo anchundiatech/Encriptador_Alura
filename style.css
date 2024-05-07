@@ -3,26 +3,34 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 32px; 
+    line-height: 150%; 
+}
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
 }
 
 .logo img{
     width: 100%;
     height: 100%;
+   
 }
 
-.logo{
-    padding: 15px;
-    margin: 15px;
-    margin-top: 15%;
-
-}
 
 main{
     margin: 16px auto;
     margin-left: 25px;
     display: flex;
+    justify-content: center;
     margin-bottom: 50px;
-    margin-left: 5%; 
+    margin-left: 20%; 
     width: 940px;
     min-height: 200px;
     border-radius: 25px;
@@ -53,7 +61,7 @@ main{
 .text-area:focus {
     outline:none;
     border-color: #12946d;
-    box-shadow: 0 0 5px rgba(18, 148, 109, 0.5);
+    box-shadow: 15px 0 5px rgba(18, 148, 109, 0.5);
 }
 
 .alerta{
@@ -96,7 +104,6 @@ main{
 .mensaje:focus {
     outline:none;
     border-color: #12946d;
-    box-shadow: 0 0 5px rgba(18, 148, 109, 0.5);
 }
 
 .seccion-mensaje{
@@ -105,9 +112,6 @@ main{
 
 
 .botones{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
     top: 20px;
     height: 50px;
     width: calc(100% - 40px);
@@ -132,7 +136,7 @@ main{
 .btn-encriptar:hover {
     background: #D8DFE8;
     opacity: 0.5;
-    scale:  0.98;
+    
 }
 
 .btn-desencriptar{
@@ -150,7 +154,7 @@ main{
 .btn-desencriptar:hover {
     background:#fff;
     opacity: 0.5;
-    scale:  0.98;
+   
 }
 
 
@@ -173,7 +177,7 @@ main{
 .btn_copiar:hover {
     background:#fff;
     opacity: 0.5;
-    scale:  0.98;
+
 }
 
 .btn_pegar{
@@ -193,7 +197,7 @@ main{
 .btn_pegar:hover {
     background:#fff;
     opacity: 0.5;    
-    scale:  0.98;
+    
 }
 
 .botones2{
@@ -211,56 +215,81 @@ main{
 
 /* Footer */
 
-footer{
-    justify-content: center;
-    color: #12946d;
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0; 
+    color: #12946d;
 }
 
-.redes{
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.items-footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-
+    border-radius: 10px;
 }
 
-.github, .linkedin, .instagram{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
+.items-footer img{
+    width: 30px;
+    height: 30px;
+}
+
+.items-footer:hover{
+    background-color: #12946d;
     cursor: pointer;
+    color: #fff;
 }
 
-.github:hover, .linkedin:hover, .instagram:hover{
-    opacity: 0.5;
-}
 
-.copyright{
-    margin-top: 10px;
-}
+
 
 
 /* Responsive */
 
 
-/* @media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header, .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .botones{
+        display: flex;
+        margin-right: 100%;
+    }
+
+    .btn-desencriptar, .btn-encriptar{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+   
+
+    .mensaje{
+        background-image: url(Img/Muneco.png);
+    }
+
     .logo{
         margin-top: 0px;
     }
 
-    .logo img{
-        width: 100%;
-        height: 100%;
-    }
-
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .seccion-texto{
         width: 100%;
@@ -268,47 +297,6 @@ footer{
 
     .seccion-mensaje{
         width: 100%;
-    }
-
-    .botones{
-        display: flex;
-        flex-direction: start;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn_encriptar, .btn_desencriptar, .btn_copiar, .btn_pegar{
-        display: flex;
-        flex-direction: start;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn_encriptar:hover, .btn_desencriptar:hover, .btn_copiar:hover, .btn_pegar:hover{
-        opacity: 0.5;
-        scale:  0.98;
-    }
-
-    
-
-    .btn-encriptar, .btn-desencriptar{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .btn_encriptar:hover, .btn_desencriptar:hover{
-        opacity: 0.5;
-        scale:  0.98;
-    }
-    .btn_copiar, .btn_pegar{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .botones2{
-        display: flex;
-        flex-direction: start;
-        justify-content: center;
-        align-items: start;
     }
 
     .redes{
@@ -323,4 +311,4 @@ footer{
         margin: 10px;
     }
 
-} */
+} 
