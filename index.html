@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <img class="Logo" src="Img/Logo.png" alt="">
+        <img class="logo" src="Img/Logo.png" alt="">
     </header>
     
     <main class="contenedor">
@@ -27,27 +27,27 @@
             </div>
         </section>
         <section class="seccion-mensaje">
-            <textarea class="mensaje" cols="30" rows="20"></textarea>
+            <textarea placeholder="Ningun mensaje fue encontrado" class="mensaje" cols="30" rows="20"></textarea>
             <!-- <div>
                 <h6 class="parrafo">Ningun mensaje fue encontrado</h6>
             </div> -->
             <div class="botones2">
-                <button class="btn_copiar" onclick="textoCopiado()">Copiar</button>
-                <button class="btn_pegar" onclick="btnPegar()" >Pegar</button>
+                <button class="btn_copiar" onclick="copiarContenido()">Copiar</button>
+                <!-- <button class="btn_pegar" onclick="btnPegar()" >Pegar</button> -->
             </div>
         </section>
     </main>
 
     <footer>
-        <p class="copyright">&copy; Desarrollador por Alejandro Anchundia.</p>
-        <div class="redes">
-            <a href="https://github.com/EdgarCarrion" target="_blank"><img class="github" src="Img/github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/edgar-carrion/" target="_blank"><img class="linkedin" src="Img/linkedin.png" alt="linkedin"></a>
-            <a href="https://www.instagram.com/edgar_carrion/" target="_blank"><img class="instagram" src="Img/instagram.png" alt="instagram"></a>
-            
-        </div>
+        <ul class="social-icons">
+            <li class="items-footer" ><a href="https://github.com/miusuario" target="_blank"><img src="Img/github.png" alt="github"></a></li>
+            <li class="items-footer" ><a href="https://www.linkedin.com/in/miusuario" target="_blank"><img src="Img/linkedin.png" alt="Twitter"></a></li>
+            <li class="items-footer" ><a href="https://www.instagram.com/miusuario" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a></li>
+            <!-- Agrega más enlaces a otras redes sociales aquí -->
+        </ul>
+        <p>&copy; Desarrollado por Alejandro Anchundia</p>
+        
     </footer>
-
 
     <script src="logica.js"></script>
 </body>
