@@ -22,20 +22,14 @@ function btnDesencriptar() {
     mensaje.style.backgroundImage = "none";
 }
 
-function textoCopiado() {
-    mensaje.select();
-    navigator.clipboard.writeText(mensaje.value);
-    mensaje.value = "";
-    btn_copiar.innerText = "Copiado!";
-}
+lnavigator.permissions.query({ name: "write-on-clipboard" })
+.then((resultado) => {
+  if (resultado.state == "granted" || resultado.state == "prompt") {
+    alert("¡Permiso de escritura concedido!");
+  }
+});
 
-function btnPegar() {
-    navigator.clipboard
-    .readText()
-    .then(
-      (clipText) => (document.querySelector(".").innerText += clipText),
-    );
-}
+
 
 //Funcion para encriptar el texto
 function encriptarTexto(stringText) {
